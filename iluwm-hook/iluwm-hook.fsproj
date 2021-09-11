@@ -1,0 +1,24 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+    <PropertyGroup>
+        <OutputType>WinExe</OutputType>
+        <TargetFramework>net5.0</TargetFramework>
+        <RootNamespace>iluwm_hook</RootNamespace>
+    </PropertyGroup>
+
+    <ItemGroup>
+        <Compile Include="Keystroke.fs" />
+        <Compile Include="IPC.fs" />
+        <Compile Include="Native.fs" />
+        <Compile Include="Keypress.fs" />
+        <Compile Include="LowLevelKeyboardHook.fs" />
+        <Compile Include="HotkeyDefinitions.fs" />
+        <Compile Include="IluwmKeyboardHook.fs" />
+        <Compile Include="Program.fs" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <PackageReference Include="Microsoft.FSharpLu.Json" Version="0.11.6" />
+    </ItemGroup>
+
+</Project>
